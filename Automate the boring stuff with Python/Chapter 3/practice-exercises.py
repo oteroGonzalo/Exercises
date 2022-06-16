@@ -1,9 +1,15 @@
+# Write a function named collatz() that has one parameter named number. If number is even,
+# then collatz() should print number // 2 and return this value. If number is odd, then collatz()
+# should print and return 3 * number + 1.
+
+
+
 def collatz():
     try:
         n = int(input('Introduce a non-negative integer: '))
         calculateCollatz(n)
     except:
-        print('Number itroduces is not valid')
+        print('Number itroduced is not valid')
 
 def calculateCollatz(n):
     print(n)
